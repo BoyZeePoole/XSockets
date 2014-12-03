@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="XSockets.Azure.Service" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2014-06.2.4">
+  <WorkerRole name="XSockets3x.WorkerRole" vmsize="Small">
+    <Imports>
+    </Imports>
+    <Endpoints>
+      <InputEndpoint name="XSocketsEndpoint1" protocol="tcp" port="443" localPort="443" />
+    </Endpoints>
+    <ConfigurationSettings>
+      <Setting name="XSocketsHostUri" />
+      <Setting name="XSocketsOrigins" />
+    </ConfigurationSettings>
+    <Certificates>
+    </Certificates>
+  </WorkerRole>
+</ServiceDefinition>
